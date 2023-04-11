@@ -1,0 +1,60 @@
+.toolbar {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 3px 3px #eaecf0;
+
+  .container {
+    .footer-wrapper {
+      justify-content: space-between;
+
+      .copyright {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #363636;
+        margin: 0;
+      }
+
+      .terms-group {
+        .terms {
+          font-family: "Sofia Pro";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 18px;
+          color: #363636;
+          text-decoration: none;
+          margin-right: 30px;
+        }
+
+        .policy {
+          font-family: "Sofia Pro";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 18px;
+          color: #363636;
+          text-decoration: none;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        .copyright {
+          margin-top: 20px;
+        }
+        .terms-group {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

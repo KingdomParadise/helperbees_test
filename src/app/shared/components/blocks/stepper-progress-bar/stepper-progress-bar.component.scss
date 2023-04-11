@@ -1,0 +1,26 @@
+.stepper-progress {
+  width: 100%;
+  display: flex;
+  padding-top: 40px;
+
+  .progress-line {
+    width: 20%;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    height: 10px;
+  }
+
+  .pass {
+    background-color: #00ab8d;
+  }
+}
+
+.stepper-status {
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: "Sofia Pro";
+  color: #363636;
+}

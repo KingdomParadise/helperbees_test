@@ -1,0 +1,229 @@
+<app-page-layout>
+  <div style="background-color: #fdf9f1">
+    <div class="container mt-80">
+      <app-progress-bar *ngIf="isLoading"></app-progress-bar>
+
+      <ng-container *ngIf="!isLoading">
+        <stepper-progress-bar [step]="step"></stepper-progress-bar>
+
+        <div class="step-wrapper" *ngIf="step === 0">
+          <h4 class="step-title">My favorite movie genre is:</h4>
+          <p class="step-subtitle">(Check all that apply)</p>
+          <div class="row justify-content-center">
+            <div
+              *ngFor="let item of step1Checks | keyvalue"
+              class="col-10 col-sm-6 mt-4"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input check-input"
+                  type="checkbox"
+                  value=""
+                  id="{{ item.key }}"
+                />
+                <label
+                  class="form-check-label check-label"
+                  for="{{ item.key }}"
+                >
+                  {{ item.value }}
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-wrapper" *ngIf="step === 1">
+          <h4 class="step-title">
+            How long have you been an angular developer?
+          </h4>
+          <div class="justify-content-center mt-5">
+            <div
+              *ngFor="let item of step2Radios | keyvalue"
+              class="form-check mt-4"
+            >
+              <input
+                class="form-check-input check-input"
+                type="radio"
+                name="experience"
+                id="{{ item.key }}"
+              />
+              <label class="form-check-label check-label" for="{{ item.key }}">
+                {{ item.value }}
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-wrapper" *ngIf="step === 2">
+          <h4 class="step-title">What is your favorite movie?</h4>
+          <p class="step-subtitle">
+            (If you have more than one favorite movie, select Add Favorite Movie
+            to enter its details. )
+          </p>
+          <div class="row justify-content-center mt-5">
+            <div class="d-none d-sm-block col-10 col-sm-6">
+              <label for="title" class="form-check-label check-label">
+                Title
+              </label>
+            </div>
+
+            <div class="d-none d-sm-block col-10 col-sm-6">
+              <label class="form-check-label check-label" for="release">
+                Year of Release
+              </label>
+            </div>
+          </div>
+          <div *ngFor="let item of step3Movies; index as id" class="mt-2">
+            <div class="row justify-content-center mt-3">
+              <div class="col-10 col-sm-6">
+                <input
+                  class="step-input w-100"
+                  type="text"
+                  name="title"
+                  [value]="item.title"
+                  placeholder="RoboCop"
+                  id="title {{ id }}"
+                />
+              </div>
+              <div class="col-10 col-sm-6">
+                <input
+                  class="step-input w-100"
+                  type="text"
+                  name="year"
+                  placeholder="1987 not 2014, you monster"
+                  [value]="item.release"
+                  id="release {{ id }}"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10 col-sm-12">
+              <button class="add-btn mt-3" (click)="AddFavoriteMovie()">
+                Add Favorite Movie
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-wrapper" *ngIf="step === 3">
+          <h4 class="step-title">What’s your favorite movie snack?</h4>
+          <div class="row justify-content-center mt-5">
+            <div
+              *ngFor="let item of step4Radios | keyvalue"
+              class="col-10 col-sm-6 mt-4"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input check-input"
+                  type="radio"
+                  name="snack"
+                  id="{{ item.key }}"
+                />
+                <label
+                  class="form-check-label check-label"
+                  for="{{ item.key }}"
+                >
+                  {{ item.value }}
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-wrapper" *ngIf="step === 4">
+          <h4 class="step-title">
+            What is Jerry Seinfeld’s address in Seinfeld?
+          </h4>
+
+          <div class="row mt-5">
+            <div class="col-12 col-md-10 col-lg-7">
+              <label class="form-check-label check-label" for="address1">
+                Address 1
+              </label>
+              <input
+                class="step-input w-100"
+                type="text"
+                name="title"
+                value=""
+                placeholder="RoboCop"
+                id="address1"
+              />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-10 col-lg-7">
+              <label class="form-check-label check-label" for="address2">
+                Address 2
+              </label>
+              <input
+                class="step-input w-100"
+                type="text"
+                name="year"
+                placeholder="1987 not 2014, you monster"
+                value=""
+                id="address2"
+              />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-10 col-lg-7">
+              <div class="row">
+                <div class="col-5">
+                  <label class="form-check-label check-label" for="address1">
+                    City
+                  </label>
+                  <input
+                    class="step-input w-100"
+                    type="text"
+                    name="title"
+                    value=""
+                    placeholder="City"
+                    id="city"
+                  />
+                </div>
+                <div class="col-3">
+                  <label class="form-check-label check-label" for="address1">
+                    State
+                  </label>
+                  <input
+                    class="step-input w-100"
+                    type="text"
+                    name="title"
+                    value=""
+                    placeholder="State"
+                    id="state"
+                  />
+                </div>
+                <div class="col-4">
+                  <label class="form-check-label check-label" for="zip">
+                    Zip Code
+                  </label>
+                  <input
+                    class="step-input w-100"
+                    type="text"
+                    name="title"
+                    value=""
+                    placeholder="Zip Code"
+                    id="zip"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-5 mb-4">
+          <button *ngIf="step === 0" class="exit-btn" (click)="ExitAssament()">
+            Exit Assament
+          </button>
+          <button *ngIf="step !== 0" class="exit-btn" (click)="PrevStep()">
+            &leftarrow; Previous Question
+          </button>
+
+          <button class="next-btn" (click)="NextStep()">Next</button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</app-page-layout>
