@@ -49,14 +49,14 @@
         font-size: 40px;
         line-height: 48px;
         color: #363636;
-        font-family: "Alda OT CEV";
+        font-family: "Alda OT CEV", serif;
       }
       .hero-text {
         padding-top: 40px;
         font-size: 20px;
         line-height: 28px;
         color: #363636;
-        font-family: "Sofia Pro";
+        font-family: "Sofia Pro", sans-serif;
       }
       .hero-button {
         margin-top: 30px;
@@ -69,7 +69,7 @@
         color: #2c2c2c;
         transition: 0.3s;
         box-shadow: none;
-        font-family: "Sofia Pro";
+        font-family: "Sofia Pro", sans-serif;
         &:hover {
           box-shadow: 0 0 3px 0px grey;
         }
