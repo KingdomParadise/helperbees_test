@@ -1,9 +1,92 @@
-@font-face {
-  font-family: "Sofia Pro";
-  src: local("Sofia Pro"), url("../fonts/sofiapro-light.otf");
-}
-
+// Alda OT CEV
 @font-face {
   font-family: "Alda OT CEV";
-  src: local("Alda OT CEV"), url("../fonts/AldaOT-Light.ttf");
+  src: url("../fonts/Alda OT CEV/Alda OT CEV Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alda OT CEV";
+  src: url("../fonts/Alda OT CEV/Alda OT CEV Bold Italic.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alda OT CEV";
+  src: url("../fonts/Alda OT CEV/Alda OT CEV Light Italic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alda OT CEV";
+  src: url("../fonts/Alda OT CEV/Alda OT CEV Light Regular.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alda OT CEV";
+  src: url("../fonts/Alda OT CEV/Alda OT CEV Regular Italic.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alda OT CEV";
+  src: url("../fonts/Alda OT CEV/Alda OT CEV Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Sofia Pro
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Black Italic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Bold Italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Ultra Light Italic.otf")
+    format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/Sofia Pro/Sofia Pro Ultra Light.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
 }

@@ -110,10 +110,14 @@
       justify-content: center;
 
       @media screen and (max-width: 1120px) {
-        height: 50%;
+        height: 42%;
       }
 
       @media screen and (max-width: 768px) {
+        width: 60%;
+        height: auto;
+      }
+      @media screen and (max-width: 500px) {
         width: 80%;
         height: auto;
       }
