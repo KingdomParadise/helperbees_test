@@ -31,18 +31,17 @@
             How long have you been an angular developer?
           </h4>
           <div class="justify-content-center mt-5">
-            <div
-              *ngFor="let item of step2Radios | keyvalue"
-              class="form-check mt-4"
-            >
+            <div *ngFor="let item of step2Radios" class="form-check mt-4">
               <input
                 class="form-check-input check-input"
                 type="radio"
                 name="experience"
-                id="{{ item.key }}"
+                [(ngModel)]="selectedStep2Radio"
+                id="{{ item.id }}"
+                [value]="item.id"
               />
-              <label class="form-check-label check-label" for="{{ item.key }}">
-                {{ item.value }}
+              <label class="form-check-label check-label" for="{{ item.id }}">
+                {{ item.text }}
               </label>
             </div>
           </div>
@@ -75,7 +74,7 @@
                   class="step-input w-100"
                   type="text"
                   name="title"
-                  [value]="item.title"
+                  [(ngModel)]="item.title"
                   placeholder="RoboCop"
                   id="title {{ id }}"
                 />
@@ -86,7 +85,7 @@
                   type="text"
                   name="year"
                   placeholder="1987 not 2014, you monster"
-                  [value]="item.release"
+                  [(ngModel)]="item.release"
                   id="release {{ id }}"
                 />
               </div>
@@ -104,22 +103,18 @@
         <div class="step-wrapper" *ngIf="step === 3">
           <h4 class="step-title">What’s your favorite movie snack?</h4>
           <div class="row justify-content-center mt-5">
-            <div
-              *ngFor="let item of step4Radios | keyvalue"
-              class="col-10 col-sm-6 mt-4"
-            >
+            <div *ngFor="let item of step4Radios" class="col-10 col-sm-6 mt-4">
               <div class="form-check">
                 <input
                   class="form-check-input check-input"
                   type="radio"
                   name="snack"
-                  id="{{ item.key }}"
+                  [(ngModel)]="selectedStep4Radio"
+                  [value]="item.text"
+                  id="{{ item.id }}"
                 />
-                <label
-                  class="form-check-label check-label"
-                  for="{{ item.key }}"
-                >
-                  {{ item.value }}
+                <label class="form-check-label check-label" for="{{ item.id }}">
+                  {{ item.text }}
                 </label>
               </div>
             </div>
@@ -145,7 +140,7 @@
                 class="step-input w-100 address-input"
                 type="text"
                 name="title"
-                value=""
+                [(ngModel)]="step5Address.addr1"
                 placeholder="RoboCop"
                 id="address1"
               />
@@ -164,7 +159,7 @@
                 type="text"
                 name="year"
                 placeholder="1987 not 2014, you monster"
-                value=""
+                [(ngModel)]="step5Address.addr2"
                 id="address2"
               />
             </div>
@@ -183,7 +178,7 @@
                     class="step-input w-100 address-input"
                     type="text"
                     name="title"
-                    value=""
+                    [(ngModel)]="step5Address.city"
                     placeholder="City"
                     id="city"
                   />
@@ -199,7 +194,7 @@
                     class="step-input w-100 address-input"
                     type="text"
                     name="title"
-                    value=""
+                    [(ngModel)]="step5Address.state"
                     placeholder="State"
                     id="state"
                   />
@@ -215,7 +210,7 @@
                     class="step-input w-100 address-input"
                     type="text"
                     name="title"
-                    value=""
+                    [(ngModel)]="step5Address.zip"
                     placeholder="Zip Code"
                     id="zip"
                   />

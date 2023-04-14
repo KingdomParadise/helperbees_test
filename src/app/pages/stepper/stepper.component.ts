@@ -27,27 +27,48 @@ export class StepperComponent implements OnInit {
     { id: 'none', checked: false, text: 'None of the above' },
   ];
 
-  public step2Radios: string[] = [
-    '0 - 3 years',
-    '4 - 6 years',
-    '7 or more years',
+  public step2Radios: Array<{ id: number; text: string }> = [
+    { id: 1, text: '0 - 3 years' },
+    { id: 2, text: '4 - 6 years' },
+    { id: 3, text: '7 or more years' },
   ];
 
-  public step3Movies: [{ title: string; release: string }] = [
+  public selectedStep2Radio: number = 0;
+
+  public step3Movies: Array<{ title: string; release: string }> = [
     {
       title: '',
       release: '',
     },
   ];
 
-  public step4Radios: string[] = [
-    'Popcorn',
-    'Nachos',
-    'Jonior Mints',
-    'Milk Duds',
-    'Skittles',
-    'I only watch Criterion Collection films at Arthouses that disallow snacks because there might be a crinkling sound that disrupts other patrons.',
+  public step4Radios: Array<{ id: number; text: string }> = [
+    { id: 1, text: 'Popcorn' },
+    { id: 2, text: 'Nachos' },
+    { id: 3, text: 'Jonior Mints' },
+    { id: 4, text: 'Milk Duds' },
+    { id: 5, text: 'Skittles' },
+    {
+      id: 6,
+      text: 'I only watch Criterion Collection films at Arthouses that disallow snacks because there might be a crinkling sound that disrupts other patrons.',
+    },
   ];
+
+  public selectedStep4Radio: number = 0;
+
+  public step5Address: {
+    addr1: string;
+    addr2: string;
+    city: string;
+    state: string;
+    zip: string;
+  } = {
+    addr1: '',
+    addr2: '',
+    city: '',
+    state: '',
+    zip: '',
+  };
 
   public ngOnInit(): void {
     setTimeout(() => {
