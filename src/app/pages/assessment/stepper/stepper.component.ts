@@ -111,22 +111,22 @@ export class StepperComponent implements OnInit {
   public NextStep() {
     if (this.step === 4) {
       this.step = 0;
-      this.router.navigate(['/final']);
+      this.router.navigate(['/assessment/success']);
     } else {
       this.step++;
-      this.router.navigate(['/stepper/' + (this.step + 1)]);
+      this.router.navigate(['/assessment/stepper/' + (this.step + 1)]);
     }
   }
 
   public PrevStep() {
     this.step--;
-    this.router.navigate(['/stepper/' + (this.step + 1)]);
+    this.router.navigate(['/assessment/stepper/' + (this.step + 1)]);
   }
 
   // Exit Assessment
   public ExitAssessment() {
     this.step = 0;
-    this.router.navigate(['/final']);
+    this.router.navigate(['/assessment/success']);
   }
 
   // validation for next button

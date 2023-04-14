@@ -3,22 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: 'assessment',
     loadChildren: () =>
-      import('./pages/home/home.module').then((m) => m.HomeModule),
+      import('./pages/assessment/assessment.module').then(
+        (m) => m.AssessmentModule
+      ),
   },
-  {
-    path: 'stepper/:step',
-    loadChildren: () =>
-      import('./pages/stepper/stepper.module').then((m) => m.StepperModule),
-  },
-  {
-    path: 'final',
-    loadChildren: () =>
-      import('./pages/final/final.module').then((m) => m.FinalModule),
-  },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'stepper', redirectTo: '/stepper/1', pathMatch: 'full' },
+  { path: '', redirectTo: '/assessment/intro', pathMatch: 'full' },
 ];
 
 @NgModule({

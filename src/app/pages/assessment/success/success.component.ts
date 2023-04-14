@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-final',
-  templateUrl: './final.component.html',
-  styleUrls: ['./final.component.scss'],
+  templateUrl: './success.component.html',
+  styleUrls: ['./success.component.scss'],
 })
-export class FinalComponent implements OnInit {
+export class SuccessComponent implements OnInit {
   public isLoading = false;
   constructor() {}
 

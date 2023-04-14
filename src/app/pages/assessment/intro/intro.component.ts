@@ -3,10 +3,10 @@ import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: './intro.component.html',
+  styleUrls: ['./intro.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class IntroComponent implements OnInit {
   public isLoading: boolean = true;
 
   constructor() {}

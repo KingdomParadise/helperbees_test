@@ -5,24 +5,26 @@
     <ng-container *ngIf="!isLoading">
       <div class="row justify-content-center h-100">
         <div class="col-10 col-md-6 hero-image">
-          <div class="hero-section-content">
-            <h4 class="hero-title">You’ve completed your quiz</h4>
-            <p class="hero-text">
-              We really appreciate that you took the time to log the answers to
-              this quiz to the console as a javascript object!
-            </p>
-            <button class="hero-button" routerLink="/home">
-              Take me to your leader
-            </button>
-          </div>
-        </div>
-        <div class="col-10 col-md-6 hero-section">
           <div class="d-flex justify-content-center align-items-center h-100">
             <img
               src="../../../assets/img/main_img.png"
               alt="main_image"
               class="hero-img"
             />
+          </div>
+        </div>
+        <div class="col-10 col-md-6 hero-section">
+          <div class="hero-section-content">
+            <h4 class="hero-title">
+              Let’s get started filling out your profile
+            </h4>
+            <p class="hero-text">
+              The best way for us to get you the right kind of help is to know
+              you as well as possible.
+            </p>
+            <button class="hero-button" routerLink="/assessment/stepper">
+              Start
+            </button>
           </div>
         </div>
       </div>
