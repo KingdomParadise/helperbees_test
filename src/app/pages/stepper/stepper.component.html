@@ -10,22 +10,16 @@
           <h4 class="step-title">My favorite movie genre is:</h4>
           <p class="step-subtitle">(Check all that apply)</p>
           <div class="row justify-content-center">
-            <div
-              *ngFor="let item of step1Checks | keyvalue"
-              class="col-10 col-sm-6 mt-4"
-            >
+            <div *ngFor="let item of step1Checks" class="col-10 col-sm-6 mt-4">
               <div class="form-check">
                 <input
                   class="form-check-input check-input"
                   type="checkbox"
-                  value=""
-                  id="{{ item.key }}"
+                  [(ngModel)]="item.checked"
+                  id="{{ item.id }}"
                 />
-                <label
-                  class="form-check-label check-label"
-                  for="{{ item.key }}"
-                >
-                  {{ item.value }}
+                <label class="form-check-label check-label" for="{{ item.id }}">
+                  {{ item.text }}
                 </label>
               </div>
             </div>
@@ -57,7 +51,8 @@
         <div class="step-wrapper" *ngIf="step === 2">
           <h4 class="step-title">What is your favorite movie?</h4>
           <p class="step-subtitle">
-            (If you have more than one favorite movie, select Add Favorite Movie
+            (If you have more than one favorite movie, select
+            <span style="font-weight: 800">Add Favorite Movie</span>
             to enter its details. )
           </p>
           <div class="row justify-content-center mt-5">
@@ -136,13 +131,18 @@
             What is Jerry Seinfeld’s address in Seinfeld?
           </h4>
 
-          <div class="row mt-5">
+          <h6 class="address-subtitle">Address</h6>
+
+          <div class="row mt-3">
             <div class="col-12 col-md-10 col-lg-7">
-              <label class="form-check-label check-label" for="address1">
+              <label
+                class="form-check-label check-label address-label"
+                for="address1"
+              >
                 Address 1
               </label>
               <input
-                class="step-input w-100"
+                class="step-input w-100 address-input"
                 type="text"
                 name="title"
                 value=""
@@ -153,11 +153,14 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-10 col-lg-7">
-              <label class="form-check-label check-label" for="address2">
+              <label
+                class="form-check-label check-label address-label"
+                for="address2"
+              >
                 Address 2
               </label>
               <input
-                class="step-input w-100"
+                class="step-input w-100 address-input"
                 type="text"
                 name="year"
                 placeholder="1987 not 2014, you monster"
@@ -170,11 +173,14 @@
             <div class="col-12 col-md-10 col-lg-7">
               <div class="row">
                 <div class="col-5">
-                  <label class="form-check-label check-label" for="address1">
+                  <label
+                    class="form-check-label check-label address-label"
+                    for="address1"
+                  >
                     City
                   </label>
                   <input
-                    class="step-input w-100"
+                    class="step-input w-100 address-input"
                     type="text"
                     name="title"
                     value=""
@@ -183,11 +189,14 @@
                   />
                 </div>
                 <div class="col-3">
-                  <label class="form-check-label check-label" for="address1">
+                  <label
+                    class="form-check-label check-label address-label"
+                    for="address1"
+                  >
                     State
                   </label>
                   <input
-                    class="step-input w-100"
+                    class="step-input w-100 address-input"
                     type="text"
                     name="title"
                     value=""
@@ -196,11 +205,14 @@
                   />
                 </div>
                 <div class="col-4">
-                  <label class="form-check-label check-label" for="zip">
+                  <label
+                    class="form-check-label check-label address-label"
+                    for="zip"
+                  >
                     Zip Code
                   </label>
                   <input
-                    class="step-input w-100"
+                    class="step-input w-100 address-input"
                     type="text"
                     name="title"
                     value=""
@@ -213,9 +225,9 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-between mt-5 mb-4">
+        <div class="d-flex justify-content-between mt-5 pb-4">
           <button *ngIf="step === 0" class="exit-btn" (click)="ExitAssament()">
-            Exit Assament
+            Exit Assessment
           </button>
           <button *ngIf="step !== 0" class="exit-btn" (click)="PrevStep()">
             &leftarrow; Previous Question

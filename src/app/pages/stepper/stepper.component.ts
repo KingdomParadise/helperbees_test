@@ -12,19 +12,19 @@ export class StepperComponent implements OnInit {
 
   public isLoading: boolean = true;
   public step: number = 0;
-  public step1Checks: string[] = [
-    'Action',
-    'Western',
-    'Horror',
-    'Romantic',
-    'Drama',
-    'Comedy',
-    'Thriller',
-    'Kevin Hart Buddy Comedy',
-    'Science Fiction',
-    'Noir',
-    'Fantacy',
-    'None of the above',
+  public step1Checks: Array<{ id: string; checked: boolean; text: string }> = [
+    { id: 'action', checked: false, text: 'Action' },
+    { id: 'western', checked: false, text: 'Western' },
+    { id: 'horror', checked: false, text: 'Horror' },
+    { id: 'romantic', checked: false, text: 'Romantic' },
+    { id: 'drama', checked: false, text: 'Drama' },
+    { id: 'comedy', checked: false, text: 'Comedy' },
+    { id: 'triller', checked: false, text: 'Thriller' },
+    { id: 'kevin', checked: false, text: 'Kevin Hart Buddy Comedy' },
+    { id: 'fiction', checked: false, text: 'Science Fiction' },
+    { id: 'noir', checked: false, text: 'Noir' },
+    { id: 'fantacy', checked: false, text: 'Fantacy' },
+    { id: 'none', checked: false, text: 'None of the above' },
   ];
 
   public step2Radios: string[] = [
