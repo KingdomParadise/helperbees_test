@@ -77,4 +77,47 @@
     line-height: 32px;
     color: #fdf9f1;
   }
+
+  @media screen and (max-width: 991px) {
+    padding-right: 35px;
+    padding-left: 35px;
+    .footer-image {
+      .footer-img {
+        width: 300px;
+        height: auto;
+      }
+    }
+
+    .footer-nav {
+      margin-top: 30px;
+      .navbar-nav {
+        font-size: 18px;
+        line-height: 24px;
+
+        .nav-item {
+          margin-right: 40px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .footer-terms {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-image {
+      .footer-img {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .footer-nav {
+      display: none;
+    }
+  }
 }
