@@ -1,3 +1,122 @@
 <app-layout-header></app-layout-header>
 <app-layout-navbar></app-layout-navbar>
 <app-breadscrumb></app-breadscrumb>
+<div class="plans-wrapper">
+  <div class="container">
+    <div class="plan-hero">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-11 col-sm-10 col-md-6">
+          <div class="plan-detail pt-5 pb-5">
+            <h4 class="plan-title">Plans</h4>
+            <p class="plan-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aenean a
+              nunc vitae nunc auctor vulputate. Donec nec fermentum neque, vel
+              auctor justo. Praesent ac orci lectus.
+            </p>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-6 order-first order-md-last">
+          <div class="plan-image">
+            <img
+              src="../../../assets/img/plan_image.png"
+              alt="plan_image"
+              class="plan-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="plan-cards">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-11 col-md-6">
+          <div class="plan-card active">
+            <div class="plan-header d-flex justify-content-between">
+              <div class="">
+                <h6 class="plan-title">Subscription-based</h6>
+                <p class="plan-subtitle">Services</p>
+              </div>
+              <div class="plan-price">
+                $40 <span class="plan-period">/month</span>
+              </div>
+            </div>
+            <div class="plan-body">
+              <p class="plan-feature-title">features</p>
+              <span class="plan-feature" *ngFor="let items of [1, 2, 3, 4]">
+                <i class="fa fa-circle-check icon-check"></i>Short description
+                here lorem ipsum
+              </span>
+            </div>
+            <div class="plan-action">
+              <button class="plan-btn active">Select Plan</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-6">
+          <div class="plan-card">
+            <div class="plan-header d-flex justify-content-between">
+              <div class="">
+                <h6 class="plan-title">One-time</h6>
+                <p class="plan-subtitle">
+                  Calls with a Person on an as needed basis.
+                </p>
+              </div>
+              <div class="plan-price">
+                $50 <span class="plan-period">/call</span>
+              </div>
+            </div>
+            <div class="plan-body">
+              <p class="plan-feature-title">features</p>
+              <span class="plan-feature" *ngFor="let items of [1, 2, 3, 4]">
+                <i class="fa fa-circle-check icon-check"></i>Short description
+                here lorem ipsum
+              </span>
+            </div>
+            <div class="plan-action">
+              <button class="plan-btn">Select Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="spacing-element"></div>
+<div class="approach">
+  <div class="container">
+    <h4 class="approach-title">Our approach</h4>
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-10 col-md-9">
+        <div class="approach-video">
+          <img
+            src="../../../assets/img/approach_img.png"
+            alt="fake_approach_image"
+            class="fake_approach_img"
+          />
+          <svg viewBox="0 0 122 122" fill="none" class="yt_svg">
+            <path
+              d="M111.255 35.0298C110.652 32.7905 109.472 30.7487 107.832 29.1089C106.192 27.4691 104.15 26.2888 101.911 25.686C93.6644 23.4541 60.5262 23.4541 60.5262 23.4541C60.5262 23.4541 27.3881 23.4541 19.1414 25.686C16.902 26.2888 14.8603 27.4691 13.2205 29.1089C11.5807 30.7487 10.4004 32.7905 9.79762 35.0298C8.25778 43.4402 7.51053 51.9765 7.56571 60.5265C7.51053 69.0765 8.25778 77.6128 9.79762 86.0232C10.4004 88.2625 11.5807 90.3043 13.2205 91.9441C14.8603 93.5839 16.902 94.7642 19.1414 95.367C27.3881 97.5989 60.5262 97.5989 60.5262 97.5989C60.5262 97.5989 93.6644 97.5989 101.911 95.367C104.15 94.7642 106.192 93.5839 107.832 91.9441C109.472 90.3043 110.652 88.2625 111.255 86.0232C112.795 77.6128 113.542 69.0765 113.487 60.5265C113.542 51.9765 112.795 43.4402 111.255 35.0298ZM49.9341 76.4147V44.6383L77.4358 60.5265L49.9341 76.4147Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="quotes-wrapper">
+  <div class="container">
+    <!-- TODO: Export SVG icon from figma -->
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-10 col-md-12 col-lg-9">
+        <p class="quote-icon">"</p>
+        <p class="quote-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean a
+          nunc vitae nunc actor vulputate. Donec nec fermentum neque, vel auctor
+          justo. Praesent ac orci lectus. Suspendisse tristique ex vel
+          condimentum porttitor.
+        </p>
+
+        <h6 class="quote-user">The Helper Bees Customer</h6>
+      </div>
+    </div>
+  </div>
+</div>
