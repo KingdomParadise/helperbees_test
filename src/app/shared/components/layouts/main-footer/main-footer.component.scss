@@ -1,0 +1,80 @@
+.footer-wrapper {
+  margin-top: 160px;
+  background-image: url("../../../../../assets/img/main_footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px 100px 40px;
+
+  .footer-image {
+    .footer-img {
+      width: 406px;
+      height: 75px;
+    }
+  }
+
+  .footer-nav {
+    margin-top: 50px;
+    .navbar-nav {
+      font-family: "Sofia Pro", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: #fdf9f1;
+      display: flex;
+      flex-direction: row;
+
+      .nav-item {
+        margin-right: 80px;
+        cursor: pointer;
+        border-bottom: 1px dashed transparent;
+        transition: all 0.3s;
+
+        .nav-link {
+          &:hover {
+            color: #ffd744 !important;
+          }
+        }
+
+        &:hover {
+          border-bottom: 1px dashed #ffd744;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .footer-terms {
+    margin-top: 80px;
+    font-family: "Sofia Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    .terms {
+      text-decoration: none;
+      color: #fdf9f1;
+      padding-right: 10px;
+      border-right: 1px solid #fdf9f1;
+    }
+
+    .privacy {
+      text-decoration: none;
+      color: #fdf9f1;
+      padding-left: 10px;
+    }
+  }
+
+  .copyright {
+    font-family: "Sofia Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fdf9f1;
+  }
+}

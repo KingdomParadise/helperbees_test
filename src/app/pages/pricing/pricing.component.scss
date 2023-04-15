@@ -192,12 +192,11 @@
   padding-bottom: 100px;
   background-color: #fdf9f1;
   .quote-icon {
-    font-family: "Alda OT CEV", serif;
-    font-size: 40px;
-    padding: 8px 30px;
-    background: #ffd744;
-    width: fit-content;
+    text-align: center;
+    font-size: 100px;
+    width: 80px;
     margin: auto;
+    display: block;
   }
 
   .quote-text {

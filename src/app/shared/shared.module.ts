@@ -14,6 +14,7 @@ import { LayoutFooterComponent } from './components/layouts/layout-footer/layout
 import { LayoutNavbarComponent } from './components/layouts/layout-navbar/layout-navbar.component';
 import { BreadscrumbComponent } from './components/layouts/breadscrumb/breadscrumb.component';
 import { FaqComponent } from './components/blocks/faq/faq.component';
+import { MainFooterComponent } from './components/layouts/main-footer/main-footer.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, NgbModule],
@@ -27,6 +28,7 @@ import { FaqComponent } from './components/blocks/faq/faq.component';
     LayoutNavbarComponent,
     BreadscrumbComponent,
     FaqComponent,
+    MainFooterComponent,
   ],
   exports: [
     CommonModule,
@@ -41,6 +43,7 @@ import { FaqComponent } from './components/blocks/faq/faq.component';
     LayoutNavbarComponent,
     BreadscrumbComponent,
     FaqComponent,
+    MainFooterComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
