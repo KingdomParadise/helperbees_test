@@ -14,7 +14,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/pricing/pricing.module').then((m) => m.PricingModule),
   },
-  { path: '', redirectTo: '/assessment/intro', pathMatch: 'full' },
+  { path: '', redirectTo: '/pricing', pathMatch: 'full' },
 ];
 
 @NgModule({
