@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Components
 import { ProgressBarComponent } from './components/blocks/progress-bar/progress-bar.component';
@@ -12,9 +13,10 @@ import { PageLayoutComponent } from './components/layouts/page-layout/page-layou
 import { LayoutFooterComponent } from './components/layouts/layout-footer/layout-footer.component';
 import { LayoutNavbarComponent } from './components/layouts/layout-navbar/layout-navbar.component';
 import { BreadscrumbComponent } from './components/layouts/breadscrumb/breadscrumb.component';
+import { FaqComponent } from './components/blocks/faq/faq.component';
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NgbModule],
   declarations: [
     LayoutHeaderComponent,
     PageLayoutComponent,
@@ -24,6 +26,7 @@ import { BreadscrumbComponent } from './components/layouts/breadscrumb/breadscru
     LayoutFooterComponent,
     LayoutNavbarComponent,
     BreadscrumbComponent,
+    FaqComponent,
   ],
   exports: [
     CommonModule,
@@ -37,6 +40,7 @@ import { BreadscrumbComponent } from './components/layouts/breadscrumb/breadscru
     LayoutFooterComponent,
     LayoutNavbarComponent,
     BreadscrumbComponent,
+    FaqComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
