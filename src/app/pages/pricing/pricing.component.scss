@@ -23,6 +23,24 @@
         width: 100%;
       }
     }
+
+    @media screen and (max-width: 991px) {
+      .plan-detail {
+        .plan-title {
+          font-size: 32px;
+          margin-bottom: 46px;
+        }
+        .plan-text {
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .plan-detail {
+        text-align: center;
+      }
+    }
   }
 
   .plan-cards {
@@ -67,6 +85,7 @@
           font-size: 40px;
           line-height: 32px;
           color: #2c2c2c;
+          min-width: 110px;
 
           .plan-period {
             font-family: "Sofia Pro", sans-serif;
