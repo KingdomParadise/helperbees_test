@@ -71,4 +71,49 @@
       }
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 18px;
+    margin-right: 18px;
+
+    .faq-wrapper {
+      padding: 72px 30px 40px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .faq-wrapper {
+      padding-top: 50px;
+      .faq-title {
+        font-size: 26px;
+      }
+
+      .accordion {
+        .accordion-button {
+          font-size: 20px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+
+      .accordion-body {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    margin-left: 0;
+    margin-right: 0;
+    .faq-wrapper {
+      padding: 50px 20px 40px;
+
+      .accordion {
+        .accordion-button {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
 }
