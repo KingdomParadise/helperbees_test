@@ -1,0 +1,48 @@
+.nga-navbar {
+  background-color: #fafafa;
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #363636;
+  height: 64px;
+
+  .navbar-nav {
+    .nav-item {
+      margin-right: 80px;
+      cursor: pointer;
+      color: #363636;
+      border-bottom: 1px dashed transparent;
+      transition: all 0.3s;
+
+      .nav-link {
+        color: #363636;
+        &:hover {
+          color: #ffd744 !important;
+        }
+      }
+
+      &:hover {
+        border-bottom: 1px dashed #ffd744;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .cart {
+    text-decoration: none;
+    color: #363636;
+    cursor: pointer;
+    .icon-cart {
+      padding-right: 16px;
+    }
+
+    &:hover {
+      color: #ffd744 !important;
+    }
+  }
+}

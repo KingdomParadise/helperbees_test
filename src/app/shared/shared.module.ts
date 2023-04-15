@@ -10,6 +10,8 @@ import { StepperProgressBarComponent } from './components/blocks/stepper-progres
 import { LayoutHeaderComponent } from './components/layouts/layout-header/layout-header.component';
 import { PageLayoutComponent } from './components/layouts/page-layout/page-layout.component';
 import { LayoutFooterComponent } from './components/layouts/layout-footer/layout-footer.component';
+import { LayoutNavbarComponent } from './components/layouts/layout-navbar/layout-navbar.component';
+import { BreadscrumbComponent } from './components/layouts/breadscrumb/breadscrumb.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
@@ -20,6 +22,8 @@ import { LayoutFooterComponent } from './components/layouts/layout-footer/layout
     ProgressBarComponent,
     StepperProgressBarComponent,
     LayoutFooterComponent,
+    LayoutNavbarComponent,
+    BreadscrumbComponent,
   ],
   exports: [
     CommonModule,
@@ -31,6 +35,8 @@ import { LayoutFooterComponent } from './components/layouts/layout-footer/layout
     ProgressBarComponent,
     StepperProgressBarComponent,
     LayoutFooterComponent,
+    LayoutNavbarComponent,
+    BreadscrumbComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
