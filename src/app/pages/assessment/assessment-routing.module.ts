@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AssessmentComponent } from './assessment.component';
-import { IntroComponent } from './intro/intro.component';
 
 const routes: Routes = [
   {

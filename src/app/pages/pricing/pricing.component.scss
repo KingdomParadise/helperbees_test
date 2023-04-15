@@ -1,0 +1,251 @@
+.plans-wrapper {
+  background-color: #fdf9f1;
+  .plan-hero {
+    .plan-detail {
+      .plan-title {
+        font-family: "Alda OT CEV", serif;
+        font-size: 40px;
+        font-style: normal;
+        line-height: 20px;
+        color: #363636;
+        margin-bottom: 60px;
+      }
+      .plan-text {
+        font-family: "Sofia Pro", sans-serif;
+        font-style: normal;
+        line-height: 32px;
+        font-size: 24px;
+        color: #363636;
+      }
+    }
+    .plan-image {
+      .plan-img {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .plan-detail {
+        .plan-title {
+          font-size: 32px;
+          margin-bottom: 46px;
+        }
+        .plan-text {
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .plan-detail {
+        text-align: center;
+      }
+    }
+  }
+
+  .plan-cards {
+    .plan-card {
+      margin: 10px;
+      border-radius: 8px;
+      border: 2px solid #d9d9d9;
+      cursor: pointer;
+      box-shadow: none;
+      transition: all 0.3s;
+      background: white;
+
+      &:hover {
+        box-shadow: 0 0 3px 0 #22549f;
+      }
+
+      &.active {
+        border: 2px solid #22549f;
+      }
+
+      .plan-header {
+        padding: 40px 40px 10px;
+        border-bottom: 1px solid #d9d9d9;
+        .plan-title {
+          font-family: "Sofia Pro", sans-serif;
+          font-size: 24px;
+          line-height: 20px;
+          font-style: normal;
+          font-weight: 400;
+          color: #2c2c2c;
+        }
+        .plan-subtitle {
+          font-family: "Sofia Pro", sans-serif;
+          font-size: 16px;
+          line-height: 20px;
+          color: #868686;
+          width: 90%;
+          height: 40px;
+        }
+        .plan-price {
+          font-family: "Alda OT CEV", serif;
+          font-size: 40px;
+          line-height: 32px;
+          color: #2c2c2c;
+          min-width: 110px;
+
+          .plan-period {
+            font-family: "Sofia Pro", sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            color: #363636;
+          }
+        }
+      }
+
+      .plan-body {
+        padding: 20px 40px 40px;
+        border-bottom: 1px solid #d9d9d9;
+        .plan-feature-title {
+          font-family: "Sofia Pro", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+
+        .plan-feature {
+          padding: 15px 0;
+          font-family: "Sofia Pro", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          color: #2c2c2c;
+          display: flex;
+          align-items: center;
+
+          .icon-check {
+            color: #009278;
+            padding-right: 20px;
+            font-size: 29px;
+          }
+        }
+      }
+
+      .plan-action {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 30px;
+
+        .plan-btn {
+          border: 2px solid #22549f;
+          border-radius: 4px;
+          padding: 12px 50px;
+          font-family: "Sofia Pro", sans-serif;
+          font-size: 18px;
+          background-color: transparent;
+
+          &:hover {
+            color: white;
+            background-color: #22549f;
+            box-shadow: 0 0 3px #22549f;
+          }
+
+          &.active {
+            border: 2px solid #ffd744;
+            background-color: #ffd744;
+
+            &:hover {
+              box-shadow: 0 0 3px #ffd744;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.spacing-element {
+  background-color: white;
+  margin-top: -300px;
+  height: 400px;
+}
+
+.approach {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  cursor: pointer;
+
+  .approach-title {
+    text-align: center;
+    font-family: "Alda OT CEV", sans-serif;
+    font-size: 40px;
+    line-height: 20px;
+    color: #363636;
+    margin-bottom: 50px;
+  }
+
+  .fake_approach_img {
+    width: 100%;
+    visibility: hidden;
+  }
+
+  .approach-video {
+    background: url("../../../assets/img/approach_img.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .yt_svg {
+      position: absolute;
+      fill: #363636;
+      width: 122px;
+      height: 122px;
+    }
+
+    &:hover {
+      .yt_svg {
+        fill: rgb(231, 24, 24);
+      }
+    }
+  }
+}
+
+.quotes-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fdf9f1;
+  .quote-icon {
+    text-align: center;
+    font-size: 100px;
+    width: 80px;
+    margin: auto;
+    display: block;
+  }
+
+  .quote-text {
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 42px;
+  }
+
+  .quote-user {
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #363636;
+  }
+
+  @media screen and (max-width: 768px) {
+    .quote-text {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .quote-user {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+  }
+}

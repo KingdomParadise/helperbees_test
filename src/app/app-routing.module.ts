@@ -9,6 +9,11 @@ const routes: Routes = [
         (m) => m.AssessmentModule
       ),
   },
+  {
+    path: 'pricing',
+    loadChildren: () =>
+      import('./pages/pricing/pricing.module').then((m) => m.PricingModule),
+  },
   { path: '', redirectTo: '/assessment/intro', pathMatch: 'full' },
 ];
 

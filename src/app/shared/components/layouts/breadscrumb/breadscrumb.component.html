@@ -1,0 +1,12 @@
+<div class="container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li *ngFor="let item of paths" class="breadcrumb-item">
+        <a routerLink="{{ item.url }}" class="breadscrumb-inactive">{{
+          item.path
+        }}</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+</div>
